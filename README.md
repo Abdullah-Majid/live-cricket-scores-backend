@@ -2,7 +2,7 @@
 
 ### Motivation
 
-I'm a big cricket fan and always want to keep up with matches wherever I am. Currently, I use ![ESPNCricinfo](https://www.espncricinfo.com/) which is great on desktop however the mobile version is a bit too slow for my liking. Hence, I want to build my own version that means I'm up to date with the ball by ball coverage 🏏. This repo is concerned with the backend stack of the application.
+I'm a big cricket fan and always want to keep up with matches wherever I am. Currently, I use [ESPNCricinfo](https://www.espncricinfo.com/) which is great on desktop however the mobile version is a bit too slow for my liking. Hence, I want to build my own version that means I'm up to date with the ball by ball coverage 🏏. This repo is concerned with the backend stack of the application.
 
 #### Stack
 
