@@ -6,16 +6,17 @@ class LiveCricketScoresBackendStack(Stack):
     def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
-        my_lambda = _alambda.PythonFunction(
+        match_lambda = _alambda.PythonFunction(
             self, 
-            'GetMatchesHandler', 
+            'GetDataHandler', 
             runtime=_lambda.Runtime.PYTHON_3_9,
             entry="./lambda/",
-            index="get_matches.py",
-            handler='handler',
+            index="handler.py",
+            handler='lambda_handler',
         )
         apigw.LambdaRestApi(
             self,
             'cricket-data-api',
-            handler=my_lambda
+            handler=match_lambda
         )
+        
